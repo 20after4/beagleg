@@ -1,0 +1,27 @@
+#OPTOCAPE
+
+# output signals (set these first so that the outputs get turned off)
+P8.10 timer   #PWM Spindle
+P9.24 hi      #AXIS_ENAn
+P9.23 low     #28v PSU (atx-power)
+
+# step signals
+P8.13 low     # X_Step
+P8.15 low     # Y_Step
+P8.19 low     # Z_Step
+P9.16 low     # A_Step
+
+
+# direction signals
+P8.12 low     # X_Dir
+P8.14 low     # Y_Dir
+P8.26 low     # Z_Dir
+P9.18 low     # A_Dir
+
+
+# input signals
+P8.17 in      # X_min
+P9.12 in      # Y_min
+P8.9  in      # Z_min
+P8.18 in      # Estop_in
+
